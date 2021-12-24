@@ -1,0 +1,24 @@
+{
+  "name": "project2",
+  "version": "1.0.0",
+  "description": "just pour le fun sur front-end mentor",
+  "main": "index.js",
+  "scripts": {
+    "test": "dir"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sylla156/project2.git"
+  },
+  "author": "sylla ibrahim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sylla156/project2/issues"
+  },
+  "homepage": "https://github.com/sylla156/project2#readme",
+  "dependencies": {
+    "parcel-bundler": "^1.12.5",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
