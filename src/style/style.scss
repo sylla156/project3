@@ -107,6 +107,19 @@ body{
           & > *:nth-child(6) {
             background-color: hsl(189, 41%, 97%);
             color: black;
+            margin: 0;
+            padding: 0;
+            input{
+              width: 100%;
+            background-color: hsl(189, 41%, 97%);
+            border: none;
+            height: 100%;
+            border-radius: 0.3em;
+            text-indent: 10px;
+            &:focus{
+              outline: none;
+            }
+            }
           }
         }
       }
