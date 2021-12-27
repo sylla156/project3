@@ -11,7 +11,14 @@
 }
 
 @mixin mobile {
-  @media all and (orientation: portrait) and (min-width: 0px) and (max-width: 530px) {
+  @media all and (orientation: portrait) and (min-width: 0px) and (max-width: 530px){
+    @content;
+  }
+}
+
+
+@mixin Xmobile {
+  @media all and (orientation: portrait) and (min-width: 0px) and (max-width: 530px) and (max-height:800px){
     @content;
   }
 }

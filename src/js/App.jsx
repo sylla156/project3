@@ -8,6 +8,9 @@ export default class App extends Component {
 
     render(){
         return (
+            <>
+            <h3 className='header'>spli <br/> tter</h3>
             <Card />
+            </>
         );}
 };
