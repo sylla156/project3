@@ -1,12 +1,171 @@
 @use "./Component/mixin.scss" as *;
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  font-family: "Space Mono", monospace;
 }
 
+.card {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: hsl(185, 41%, 84%);
+  gap: 10em;
+  @include flex;
 
-.card{
-   
+  &__main {
+    width: 700px;
+    height: 350px;
+    border-radius: 1.5em;
+    padding: 2.5em;
+    background-color: hsl(0, 0%, 100%);
+    @include flex(flex, space-between, center);
+
+    & > * {
+      width: 100%;
+      height: 100%;
+    }
+
+    &--first {
+      & > :nth-child(1) {
+        margin: 0 0 2.5em 0;
+        h3 {
+          font-weight: normal;
+          text-transform: capitalize;
+          font-size: 1em;
+        }
+
+        div {
+          width: 100%;
+          padding: 0 10px;
+          input {
+            width: 70%;
+            height: 2.1em;
+          }
+        }
+      }
+      & > :nth-child(2) {
+        h3 {
+          font-weight: normal;
+          font-size: 1em;
+          margin: 0 0 13px 0;
+          text-transform: capitalize;
+        }
+
+        div {
+          @include flex(flex, space-between, center) {
+            flex-wrap: wrap;
+            gap: 1.5em 0em;
+          }
+          width: 80%;
+          margin: 0 0 50px 0;
+          & > * {
+            width: 28%;
+            background-color: hsl(183, 100%, 15%);
+            height: 1.7em;
+            border-radius: 0.3em;
+            color: hsl(0, 0%, 100%);
+            text-align: center;
+            padding: 2% 2% 0 2%;
+            font-size: 1.2em;
+            // margin: 0 2px;
+          }
+
+          & > *:nth-child(3) {
+            background-color: hsl(172, 94%, 38%);
+
+          }
+          & > *:nth-child(6) {
+            background-color: hsl(189, 41%, 97%);
+            color: black;
+          }
+        }
+      }
+      & > :nth-child(3){
+        margin: 0 0 2.5em 0;
+        h3 {
+          font-weight: normal;
+          text-transform: capitalize;
+          font-size: 1em;
+          word-spacing: 0.4em;
+        }
+
+        div {
+          width: 100%;
+          padding: 0 10px;
+          input {
+            width: 70%;
+            height: 2.1em;
+          }
+        }
+      }
+    }
+
+    &--second{
+      background-color:hsl(183, 100%, 15%);
+      border-radius:0.9em;
+      color: hsl(0, 0%, 100%);
+      & > *{
+        margin: 40px;
+      }
+      & > :nth-child(1){
+        @include flex(flex, space-between, center);
+        & > :nth-child(1) {
+          font-weight: 400;
+          font-size: 1em;
+          text-transform: capitalize;
+          p{
+            font-size: 0.7em;
+          }
+        }
+        & > :nth-child(2) {
+          font-weight: 700;
+          font-size: 2em;
+          color: hsl(172, 94%, 38%);
+          
+        }
+        
+
+      }
+
+      & > :nth-child(2){
+        @include flex(flex, space-between, center);
+        & > :nth-child(1) {
+          font-weight: 400;
+          font-size: 1em;
+          text-transform: capitalize;
+          p{
+            font-size: 0.7em;
+          }
+        }
+        & > :nth-child(2) {
+          font-weight: 700;
+          font-size: 2em;
+          color: hsl(172, 94%, 38%);
+          
+        }
+        
+
+      }
+
+
+      & > :nth-child(3){
+        div{
+          height: 5em;
+          @include flex(flex,center,end);
+          button{
+            height: 3em;
+            width: 100%;
+            background-color: hsl(172, 94%, 38%);
+            border: none;
+            border-radius:0.4em;
+
+            
+          }
+        }       
+      }
+    }
+  }
 }

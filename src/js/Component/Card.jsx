@@ -8,16 +8,15 @@ export default class Card extends Component {
     render() {
         return (
             <div className="card">
-                <h1 className="card__title">spliter</h1>
                 <div className="card__main">
                     <div className="card__main--first">
-                        <div className="card__main--fisrt--element">
-                            <h3 className="card__main--first--element__title">bill</h3>
-                            <div className="card__main--first--element__input">
+                        <div className="card__main--fisrt--element1">
+                            <h3 className="card__main--first--element1__title">bill</h3>
+                            <div className="card__main--first--element1__input">
                                 <input type="text" />
                             </div>
                         </div>
-                        <div className="card__main--fisrt--element">
+                        <div className="card__main--fisrt--element2">
                         <h3 className="card__main--first--element2__title">select Tip %</h3>
                         <div className="card__main--first--element2__main">
                             <p>5%</p>
@@ -28,24 +27,24 @@ export default class Card extends Component {
                             <p>custom</p>
                         </div>
                         </div>
-                        <div className="card__main--fisrt--element">
-                        <div className="card__main--first--element3__title">number of people</div>
+                        <div className="card__main--fisrt--element3">
+                        <h3 className="card__main--first--element3__title">number of people</h3>
                         <div className="card__main--first--element3__input">
                             <input type="text" />
                         </div>
                         </div>
                     </div>
                     <div className="card__main--second">
-                        <div className="card__main--second">
-                            <div className="card__main--second1__title">tip amout <span>/ person</span></div>
-                            <div className="card__main--second1__price">$4.25</div>
+                        <div className="card__main--second--element1">
+                            <div className="card__main--second--element1__title">tip amout <p>/ person</p></div>
+                            <div className="card__main--second--element1__price">$4.25</div>
                         </div>
-                        <div className="card__main--second">
-                        <div className="card__main--second2__title">total <span>/ person</span></div>
-                            <div className="card__main--second2__price">$32.79</div>
+                        <div className="card__main--second--element2">
+                        <div className="card__main--second--element2__title">total <p>/ person</p></div>
+                            <div className="card__main--second--element2__price">$32.79</div>
                         </div>
-                        <div className="card__main--second">
-                            <div className="card__main--second3--btn">
+                        <div className="card__main--second--element3">
+                            <div className="card__main--second--element3--btn">
                                 <button type="reset">reset</button>
                             </div>
                         </div>
