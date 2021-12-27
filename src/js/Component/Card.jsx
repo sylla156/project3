@@ -26,9 +26,9 @@ export default class Card extends Component {
       }
       this.pourcentage = valeur;
       let globaleValue = (this.state.price * this.pourcentage) / 100;
-      globaleValue = globaleValue.toPrecision(2);
+      globaleValue = Math.floor(globaleValue);
       let singleValue = globaleValue / this.state.manNumber;
-      singleValue = singleValue.toPrecision(2);
+      singleValue = Math.floor(singleValue);
       this.setState({ singlePrice: singleValue, globalPrice: globaleValue });
     } else {
     }
@@ -46,9 +46,9 @@ export default class Card extends Component {
     }
     this.pourcentage = value;
     let globaleValue = (this.state.price * this.pourcentage) / 100;
-    globaleValue = globaleValue.toPrecision(2);
+    globaleValue = Math.floor(globaleValue);
     let singleValue = globaleValue / this.state.manNumber;
-    singleValue = singleValue.toPrecision(2);
+    singleValue = Math.floor(singleValue);
     this.setState({
       singlePrice: singleValue,
       globalPrice: globaleValue,
